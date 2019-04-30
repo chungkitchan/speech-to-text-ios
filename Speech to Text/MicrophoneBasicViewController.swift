@@ -39,7 +39,7 @@ class MicrophoneBasicViewController: UIViewController {
             microphoneButton.setTitle("Stop Microphone", for: .normal)
             var settings = RecognitionSettings(contentType: "audio/ogg;codecs=opus")
             settings.interimResults = true
-            speechToText.recognizeMicrophone(settings: settings) {
+            speechToText.recognizeMicrophone(settings: settings, languageCustomizationID: Credentials.languageCustomizationID, acousticCustomizationID: Credentials.acousticCustomizationID) {
          
                 response, error in
                 

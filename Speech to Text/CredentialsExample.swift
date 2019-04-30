@@ -16,4 +16,6 @@
 
 struct Credentials {
     static let SpeechToTextApiKey = "your-apikey-here"
+    static let languageCustomizationID = "your-custom-language-id"
+    static let acousticCustomizationID = "your-custom-acoustic-id"
 }
